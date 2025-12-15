@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/markwylde/semantic-release-gitea/compare/v1.0.0...v1.1.0) (2025-12-15)
+
+
+### Features
+
+* update README and remove broken links ([f6634bb](https://github.com/markwylde/semantic-release-gitea/commit/f6634bb2db7db8566c7e92accc33f089309261d8))
+
 # 1.0.0 (2025-12-15)
 
 
