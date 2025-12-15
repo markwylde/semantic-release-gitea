@@ -50,6 +50,9 @@
     "url": "https://github.com/markwylde/semantic-release-gitea/issues"
   },
   "homepage": "https://github.com/markwylde/semantic-release-gitea",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "git",
     "gitea",
