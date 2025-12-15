@@ -1,3 +1,6 @@
+import urlJoin from 'url-join';
+import nock from 'nock';
+
 /**
  * Return a `nock` object setup to respond to a Gitea authentication request. Other expectation and responses can be chained.
  *
@@ -8,19 +11,19 @@
  * @return {Object} A `nock` object ready to respond to a github authentication request.
  */
 export function authenticate(
-    env = {},
-    {
-        giteaToken = env.GITEA_TOKEN,
-        giteaUrl = env.GITEA_URL,
-        giteaApiPathPrefix = env.GITEA_PREFIX || '/api/v1',
-    } = {}
+  env = {},
+  {
+    giteaToken = env.GITEA_TOKEN,
+    giteaUrl = env.GITEA_URL,
+    giteaApiPathPrefix = env.GITEA_PREFIX || '/api/v1',
+  } = {},
 ) {
-    const urlJoin = require('url-join');
-    const nock = require('nock');
-    return nock(
-        urlJoin(giteaUrl, giteaApiPathPrefix),
-        {reqheaders: {'Authorization': 'token ' + giteaToken, 'Content-Type': 'application/json'}}
-    );
+  return nock(urlJoin(giteaUrl, giteaApiPathPrefix), {
+    reqheaders: {
+      Authorization: 'token ' + giteaToken,
+      'Content-Type': 'application/json',
+    },
+  });
 }
 
 /**
@@ -33,17 +36,14 @@ export function authenticate(
  * @return {Object} A `nock` object ready to respond to a github authentication request.
  */
 export function upload(
-    env = {},
-    {
-        giteaToken = env.GITEA_TOKEN,
-        giteaUrl = env.GITEA_URL,
-        giteaApiPathPrefix = env.GITEA_PREFIX || '/api/v1',
-    } = {}
+  env = {},
+  {
+    giteaToken = env.GITEA_TOKEN,
+    giteaUrl = env.GITEA_URL,
+    giteaApiPathPrefix = env.GITEA_PREFIX || '/api/v1',
+  } = {},
 ) {
-    const urlJoin = require('url-join');
-    const nock = require('nock');
-    return nock(
-        urlJoin(giteaUrl, giteaApiPathPrefix),
-        {reqheaders: {'Authorization': 'token ' + giteaToken}}
-    );
+  return nock(urlJoin(giteaUrl, giteaApiPathPrefix), {
+    reqheaders: {Authorization: 'token ' + giteaToken},
+  });
 }
