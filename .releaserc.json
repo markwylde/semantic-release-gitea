@@ -7,7 +7,7 @@
       "@semantic-release/npm",
       {
         "tarballDir": "release",
-        "npmPublish": true,
+        "npmPublish": false,
         "pkgRoot": "."
       }
     ],
