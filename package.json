@@ -42,17 +42,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.i.wylde.net/markwylde/semantic-release-gitea.git"
+    "url": "https://github.com/markwylde/semantic-release-gitea.git"
   },
   "author": "Mario Lubenka",
   "license": "MIT",
   "bugs": {
-    "url": "https://git.i.wylde.net/markwylde/semantic-release-gitea/issues"
+    "url": "https://github.com/markwylde/semantic-release-gitea/issues"
   },
-  "homepage": "https://git.i.wylde.net/markwylde/semantic-release-gitea",
-  "publishConfig": {
-    "registry": "https://git.i.wylde.net/api/packages/markwylde/npm/"
-  },
+  "homepage": "https://github.com/markwylde/semantic-release-gitea",
   "keywords": [
     "git",
     "gitea",
