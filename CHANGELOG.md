@@ -1,3 +1,32 @@
+## [2.1.4](https://git.i.wylde.net/markwylde/semantic-release-gitea/compare/v2.1.3...v2.1.4) (2025-12-15)
+
+
+### Bug Fixes
+
+* **ci:** use GITEA_TOKEN secret for package publishing ([52605e8](https://git.i.wylde.net/markwylde/semantic-release-gitea/commit/52605e8f491582217e370582fb52df59116ac08e))
+
+## [2.1.3](https://git.i.wylde.net/markwylde/semantic-release-gitea/compare/v2.1.2...v2.1.3) (2025-12-15)
+
+
+### Bug Fixes
+
+* **ci:** configure npm to publish to Gitea registry ([35c3bbf](https://git.i.wylde.net/markwylde/semantic-release-gitea/commit/35c3bbf6f8900a0c07325854e4c427dbe662580c))
+
+## [2.1.2](https://git.i.wylde.net/markwylde/semantic-release-gitea/compare/v2.1.1...v2.1.2) (2025-12-15)
+
+
+### Bug Fixes
+
+* **ci:** use automatic github.token instead of secrets ([94fcdae](https://git.i.wylde.net/markwylde/semantic-release-gitea/commit/94fcdae630b4be5518b0e9ee5ea0a24a1d9a811d))
+
+## [2.1.1](https://git.i.wylde.net/markwylde/semantic-release-gitea/compare/v2.1.0...v2.1.1) (2025-12-15)
+
+
+### Bug Fixes
+
+* **ci:** add GITEA_URL environment variable ([a6fd709](https://git.i.wylde.net/markwylde/semantic-release-gitea/commit/a6fd7099071fe24af4e7a8112322f3c3499682a7))
+* **ci:** configure Gitea registry only for publishing ([959bfc6](https://git.i.wylde.net/markwylde/semantic-release-gitea/commit/959bfc6319b464b67f4e42c02dd51d3929985338))
+
 # [2.1.0](https://github.com/saitho/semantic-release-gitea/compare/v2.0.1...v2.1.0) (2021-04-08)
 
 

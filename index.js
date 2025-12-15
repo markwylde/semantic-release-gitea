@@ -1,9 +1,9 @@
 /* eslint require-atomic-updates: off */
 
-const {defaultTo, castArray} = require('lodash');
-const verifyGitea = require('./lib/verify');
-const addChannelGitea = require('./lib/add-channel');
-const publishGitea = require('./lib/publish');
+import {defaultTo, castArray} from 'lodash-es';
+import verifyGitea from './lib/verify.js';
+import addChannelGitea from './lib/add-channel.js';
+import publishGitea from './lib/publish.js';
 
 let verified;
 
@@ -13,13 +13,11 @@ async function verifyConditions(pluginConfig, context) {
   if (options.publish) {
     const publishPlugin =
       castArray(options.publish).find(
-          (config) => config.path && config.path === '@saithodev/semantic-release-gitea'
+        (config) =>
+          config.path && config.path === '@markwylde/semantic-release-gitea',
       ) || {};
 
-    pluginConfig.assets = defaultTo(
-        pluginConfig.assets,
-        publishPlugin.assets
-    );
+    pluginConfig.assets = defaultTo(pluginConfig.assets, publishPlugin.assets);
   }
 
   await verifyGitea(pluginConfig, context);
@@ -44,4 +42,8 @@ async function addChannel(pluginConfig, context) {
   return addChannelGitea(pluginConfig, context);
 }
 
-module.exports = {verifyConditions, addChannel, publish};
+function resetVerified() {
+  verified = false;
+}
+
+export {verifyConditions, addChannel, publish, resetVerified};

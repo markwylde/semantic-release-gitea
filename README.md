@@ -1,4 +1,4 @@
-# @saithodev/semantic-release-gitea
+# @markwylde/semantic-release-gitea
 
 [**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to publish a Gitea release.
 
@@ -17,7 +17,7 @@ This plugin is based on the [semantic-release GitHub plugin](https://github.com/
 ## Install
 
 ```bash
-$ npm install @saithodev/semantic-release-gitea -D
+$ npm install @markwylde/semantic-release-gitea -D
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    ["@saithodev/semantic-release-gitea", {
+    ["@markwylde/semantic-release-gitea", {
       "giteaUrl": "https://try.gitea.io",
       "assets": [
         {"path": "dist/asset.min.css", "label": "CSS distribution"},

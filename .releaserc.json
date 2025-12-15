@@ -1,23 +1,27 @@
 {
-  "extends": "@saithodev/semantic-release-sharedconf-npm",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
       "@semantic-release/npm",
-      {"tarballDir": "release"}
+      {
+        "tarballDir": "release",
+        "npmPublish": true,
+        "pkgRoot": "."
+      }
     ],
     [
       "@semantic-release/git",
       {"assets": ["package.json", "CHANGELOG.md"]}
     ],
     [
-      "@semantic-release/github",
+      "@markwylde/semantic-release-gitea",
       {"assets": "release/*.tgz"}
     ]
   ],
   "branches": [
     "master"
-  ]
+  ],
+  "repositoryUrl": "https://github.com/markwylde/semantic-release-gitea.git"
 }
