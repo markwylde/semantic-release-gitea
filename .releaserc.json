@@ -16,7 +16,7 @@
       {"assets": ["package.json", "CHANGELOG.md"]}
     ],
     [
-      "@markwylde/semantic-release-gitea",
+      "@semantic-release/github",
       {"assets": "release/*.tgz"}
     ]
   ],
