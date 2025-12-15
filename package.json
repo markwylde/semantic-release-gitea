@@ -1,56 +1,58 @@
 {
-  "name": "@saithodev/semantic-release-gitea",
-  "version": "2.1.0",
+  "name": "@markwylde/semantic-release-gitea",
+  "version": "2.1.4",
   "description": "Publish release notes to Gitea",
+  "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
-    "codecov": "codecov -f coverage/coverage-final.json",
     "lint": "xo",
     "semantic-release": "semantic-release",
-    "test": "nyc ava -v",
-    "commit": "git-cz"
+    "test": "nyc ava -v"
   },
   "engines": {
-    "node": "^10 || ^11 || ^12 || >=14"
+    "node": ">=18.0.0"
   },
   "dependencies": {
-    "@semantic-release/error": "^2.2.0",
-    "aggregate-error": "^3.0.0",
-    "debug": "^4.0.0",
-    "dir-glob": "^3.0.0",
-    "form-data": "^3.0.0",
-    "fs-extra": "^8.0.0",
-    "globby": "^10.0.0",
-    "got": "^10.0.1",
-    "lodash": "^4.17.21",
-    "querystring": "^0.2.0",
-    "url-join": "^4.0.0"
+    "@semantic-release/error": "^4.0.0",
+    "aggregate-error": "^5.0.0",
+    "debug": "^4.4.3",
+    "dir-glob": "^3.0.1",
+    "form-data": "^4.0.5",
+    "fs-extra": "^11.3.2",
+    "globby": "^16.0.0",
+    "got": "^14.6.5",
+    "lodash-es": "^4.17.21",
+    "url-join": "^5.0.0"
   },
   "devDependencies": {
-    "@saithodev/semantic-release-sharedconf-npm": "^2.0.2",
-    "ava": "^2.0.0",
-    "clear-module": "^4.0.0",
-    "codecov": "^3.5.0",
-    "commitizen": "^4.0.3",
-    "cz-conventional-changelog": "^3.0.2",
-    "nock": "^11.1.0",
-    "nyc": "^15.0.0",
-    "proxyquire": "^2.0.0",
-    "semantic-release": "^17.4.2",
-    "sinon": "^8.0.0",
-    "tempy": "^0.3.0",
-    "xo": "^0.38.2"
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.3.5",
+    "@semantic-release/npm": "^13.1.3",
+    "ava": "^6.4.1",
+    "nock": "^14.0.10",
+    "nyc": "^17.1.0",
+    "semantic-release": "^25.0.2",
+    "sinon": "^21.0.0",
+    "tempy": "^3.1.0",
+    "xo": "^0.60.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/saitho/semantic-release-gitea"
+    "url": "https://git.i.wylde.net/markwylde/semantic-release-gitea.git"
   },
   "author": "Mario Lubenka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saitho/semantic-release-gitea/issues"
+    "url": "https://git.i.wylde.net/markwylde/semantic-release-gitea/issues"
   },
-  "homepage": "https://github.com/saitho/semantic-release-gitea#readme",
+  "homepage": "https://git.i.wylde.net/markwylde/semantic-release-gitea",
+  "publishConfig": {
+    "registry": "https://git.i.wylde.net/api/packages/markwylde/npm/"
+  },
   "keywords": [
     "git",
     "gitea",
@@ -60,11 +62,6 @@
     "semantic-release",
     "version"
   ],
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "nyc": {
     "include": [
       "lib/**/*.js",
