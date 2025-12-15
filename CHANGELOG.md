@@ -1,3 +1,15 @@
+# [2.2.0](https://github.com/markwylde/semantic-release-gitea/compare/v2.1.4...v2.2.0) (2025-12-15)
+
+
+### Bug Fixes
+
+* correct package version to 2.1.4 ([f8ff479](https://github.com/markwylde/semantic-release-gitea/commit/f8ff479c503371220a167a7d0edc7d2264b1f636))
+
+
+### Features
+
+* update README and remove broken links ([f6634bb](https://github.com/markwylde/semantic-release-gitea/commit/f6634bb2db7db8566c7e92accc33f089309261d8))
+
 # [1.1.0](https://github.com/markwylde/semantic-release-gitea/compare/v1.0.0...v1.1.0) (2025-12-15)
 
 
