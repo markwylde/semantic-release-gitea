@@ -23,5 +23,5 @@
   "branches": [
     "master"
   ],
-  "repositoryUrl": "https://git.i.wylde.net/markwylde/semantic-release-gitea.git"
+  "repositoryUrl": "https://github.com/markwylde/semantic-release-gitea.git"
 }
