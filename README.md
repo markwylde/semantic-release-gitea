@@ -1,11 +1,4 @@
 # @markwylde/semantic-release-gitea
-
-[**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to publish a Gitea release.
-
-[![Build Status](https://travis-ci.com/saitho/semantic-release-gitea.svg?branch=master)](https://travis-ci.com/saitho/semantic-release-gitea)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 | Step               | Description                                                                                                                                                                                                                              |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `verifyConditions` | Verify the presence and the validity of the authentication (set via [environment variables](#environment-variables)) and the [assets](#assets) option configuration.                                                                     |
